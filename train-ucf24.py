@@ -31,6 +31,8 @@ from torch.optim.lr_scheduler import MultiStepLR
 def str2bool(v):
     return v.lower() in ("yes", "true", "t", "1")
 
+os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"   # see issue #152
+os.environ["CUDA_VISIBLE_DEVICES"]="0,1"
 
 parser = argparse.ArgumentParser(description='Single Shot MultiBox Detector Training')
 parser.add_argument('--version', default='v2', help='conv11_2(v2) or pool6(v1) as last layer')
@@ -41,11 +43,11 @@ parser.add_argument('--input_type', default='rgb', type=str, help='INput tyep de
 parser.add_argument('--jaccard_threshold', default=0.5, type=float, help='Min Jaccard index for matching')
 parser.add_argument('--batch_size', default=32, type=int, help='Batch size for training')
 parser.add_argument('--resume', default=None, type=str, help='Resume from checkpoint')
-parser.add_argument('--num_workers', default=4, type=int, help='Number of workers used in dataloading')
+parser.add_argument('--num_workers', default=0, type=int, help='Number of workers used in dataloading')
 parser.add_argument('--max_iter', default=120000, type=int, help='Number of training iterations')
 parser.add_argument('--man_seed', default=123, type=int, help='manualseed for reproduction')
 parser.add_argument('--cuda', default=True, type=str2bool, help='Use cuda to train model')
-parser.add_argument('--ngpu', default=1, type=str2bool, help='Use cuda to train model')
+parser.add_argument('--ngpu', default=2, type=str2bool, help='Use cuda to train model')
 parser.add_argument('--lr', '--learning-rate', default=1e-3, type=float, help='initial learning rate')
 parser.add_argument('--momentum', default=0.9, type=float, help='momentum')
 parser.add_argument('--stepvalues', default='30000,60000,100000', type=str, help='iter numbers where learing rate to be dropped')
@@ -209,7 +211,18 @@ def train(args, net, optimizer, criterion, scheduler):
     torch.cuda.synchronize()
     t0 = time.perf_counter()
     iteration = 0
+    
+    if args.resume:
+      # load the checkpoint from the file specified in the '--resume' argument
+      checkpoint = torch.load('/home/fyp3-2/Desktop/BATCH18/Activity_Detection/FYP--Maritime-Surveillance/rgb_data/ucf24/cache/CONV-SSD-ucf24-rgb-bs-32-vgg16-lr-00100/ssd300_ucf24_60000.pth')
+      # initialize the model with the state from the checkpoint
+      net.load_state_dict(checkpoint)
+      # set the current iteration count to the iteration count stored in the checkpoint
+      iteration = 60000
+      print("Resuming from iteration: ", iteration)
+    
     while iteration <= args.max_iter:
+        print('*******   ',iteration)
         for i, (images, targets, img_indexs) in enumerate(train_data_loader):
 
             if iteration > args.max_iter:
