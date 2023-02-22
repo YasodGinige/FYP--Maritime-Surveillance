@@ -75,7 +75,7 @@ model.eval()
 
 ####### Data preparation and inference 
 # ---------------------------------------------------------------
-video_path = '/home/fyp3-2/Desktop/BATCH18/YOWO/datasets/AVA/video_done/swim5.mp4'
+video_path = '/home/fyp3-2/Desktop/BATCH18/YOWO/datasets/AVA/video_done/swim4.mp4'
 cap = cv2.VideoCapture(video_path)
 
 cnt = 1
@@ -150,8 +150,8 @@ while(cap.isOpened()):
     # for line in preds:
     # 	print(line)
     
-    frameSize = (448, 448)
-    out = cv2.VideoWriter('output_video.mp4', cv2.VideoWriter_fourcc(*'mp4v') , 20 , frameSize)
+    #frameSize = (448, 448)
+    #out = cv2.VideoWriter('output_video.mp4', cv2.VideoWriter_fourcc(*'mp4v') , 20 , frameSize)
     
     for dets in preds:
         x1 = int(dets[0][0] * crop_size)
@@ -182,13 +182,13 @@ while(cap.isOpened()):
 
 
 
-    #cv2.imshow('frame',frame)
-    out.write(frame)
-    #cv2.imwrite('output/{:05d}.jpg'.format(cnt), frame) # save figures if necessay
+    cv2.imshow('frame',frame)
+    #out.write(frame)
+    cv2.imwrite('output/{:05d}.jpg'.format(cnt), frame) # save figures if necessay
     cnt += 1
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-out.release()
+#out.release()
 cap.release()
 cv2.destroyAllWindows()
