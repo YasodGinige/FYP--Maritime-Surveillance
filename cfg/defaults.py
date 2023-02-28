@@ -474,7 +474,7 @@ _C.DEMO.COMMON_CLASS_NAMES = [
     "touch (an object)",
     "carry/hold (an object)",
     "walk",
-    "swim",
+    "sit",
     "lie/sleep",
     "bend/bow (at the waist)",
 ]
