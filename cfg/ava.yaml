@@ -4,7 +4,7 @@ TRAIN:
   BATCH_SIZE: 6
   TOTAL_BATCH_SIZE: 128
   LEARNING_RATE: 1e-4
-  EVALUATE: True
+  EVALUATE: False
   MODE: "val"  # `train`, `test` or `val`
   BEGIN_EPOCH: 1
   END_EPOCH: 10
