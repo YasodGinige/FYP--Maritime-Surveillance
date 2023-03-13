@@ -1,0 +1,9 @@
+
+################ Test for crowded human  #####################
+python demo.py tracking --dataset mot --load_model ../models/crowdhuman.pth --demo ../results_mid_demo/test128.mp4 --pre_hm --ltrb_amodal --pre_thresh 0.5 --track_thresh 0.4 --inference --clip_len 3 --trades --save_video --resize_video --input_h 544 --input_w 960 --num_class 1 --save_framerate 30
+
+###############  Pre recorded video tracking  #######################
+python demo.py tracking --load_model ../models/bt_ps_ch_twelve.pth --num_class 4 --demo ../videos/weligama/V3_b10_1.mp4 --pre_hm --ltrb_amodal --pre_thresh 0.5 --track_thresh 0.5 --inference --clip_len 2 --trades --save_video --resize_video --input_h 480 --input_w 864 --save_framerate 30
+
+############### Real time video tracking ##########################
+python mid_demo.py tracking --load_model ../models/bt_ps_ch_twelve.pth --num_class 4 --demo ../videos/weligama/V3_b10_1.mp4 --pre_hm --ltrb_amodal --pre_thresh 0.5 --track_thresh 0.5 --inference --clip_len 2 --trades --save_video --resize_video --input_h 480 --input_w 864 --save_framerate 30
