@@ -5,9 +5,9 @@ TRAIN:
   TOTAL_BATCH_SIZE: 128
   LEARNING_RATE: 1e-4
   EVALUATE: False
-  MODE: "val"  # `train`, `test` or `val`
+  MODE: "train"  # `train`, `test` or `val`
   BEGIN_EPOCH: 1
-  END_EPOCH: 10
+  END_EPOCH: 200
   CLASS_RATIO_FILE: "cfg/ava_categories_ratio.json"
   USE_GROUNDTRUTH: False
   USE_SLOWFAST: False
@@ -16,9 +16,9 @@ DATA:
   SAMPLING_RATE: 1
   TRAIN_JITTER_SCALES: [256, 320]
   TRAIN_CROP_SIZE: 224
-  TEST_CROP_SIZE: 448
+  TEST_CROP_SIZE: 224
 SOLVER:
-  STEPS: [3, 4, 5, 6]
+  STEPS: [40, 80, 120, 160]     #  [3, 4, 5, 6]
   LR_DECAY_RATE: 0.5
   ANCHORS: [0.71626, 2.13583, 1.28967, 4.15014, 2.12714, 5.09344, 3.27212, 5.87423, 5.16303, 6.33821]
 AVA:

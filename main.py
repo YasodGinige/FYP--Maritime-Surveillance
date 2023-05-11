@@ -128,6 +128,7 @@ if cfg.TRAIN.EVALUATE:
     logging('evaluating ...')
     test(cfg, 0, model, test_loader)
 else:
+    print("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS")
     for epoch in range(cfg.TRAIN.BEGIN_EPOCH, cfg.TRAIN.END_EPOCH + 1):
         # Adjust learning rate
         lr_new = adjust_learning_rate(optimizer, epoch, cfg)

@@ -456,7 +456,7 @@ _C.DEMO.GT_BOXES = ""
 # The starting second of the video w.r.t bounding boxes file.
 _C.DEMO.STARTING_SECOND = 900
 # Frames per second of the input video/folder of images.
-_C.DEMO.FPS = 30
+_C.DEMO.FPS = 5
 # Visualize with top-k predictions or predictions above certain threshold(s).
 # Option: {"thres", "top-k"}
 _C.DEMO.VIS_MODE = "thres"
@@ -487,7 +487,7 @@ _C.DEMO.SLOWMO = 1
 # ---------------------------------------------------------------------------- #
 
 # Number of GPUs to use (applies to both training and testing).
-_C.NUM_GPUS = 1
+_C.NUM_GPUS = 2
 
 # Number of machine to use for the job.
 _C.NUM_SHARDS = 1

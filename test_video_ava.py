@@ -75,7 +75,7 @@ model.eval()
 
 ####### Data preparation and inference 
 # ---------------------------------------------------------------
-video_path = '/home/fyp3-2/Desktop/BATCH18/YOWO/datasets/AVA/video_done/swim4.mp4'
+video_path = '/home/fyp3-2/Desktop/BATCH18/YOWO/datasets/AVA/video_done/ht1_gray.mp4'
 cap = cv2.VideoCapture(video_path)
 
 cnt = 1
