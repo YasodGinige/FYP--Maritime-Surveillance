@@ -1,0 +1,36 @@
+python pipeline.py --mode train --dataset '/home/fyp3-2/Desktop/BATCH18/ReID_check/Data' --part_att_ckpt '/home/fyp3-2/Desktop/BATCH18/Mask_Images/part_attention_chckpt' --mask_dir '/home/fyp3-2/Desktop/BATCH18/ReID_check' --train_csv_path '/home/fyp3-2/Desktop/BATCH18/ReID_check/train_data.csv' --mask_dl_ckpt '/home/fyp3-2/Desktop/BATCH18/Mask_Images/mask_dl_chckpt'
+
+
+
+########## Pipeline training and evaluation ################
+
+python pipeline.py --mode train --dataset '/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/reid/' --part_att_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/pt_at_ckpt/' --mask_dir '/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/masks/' --train_csv_path "/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/train_data.csv" --mask_dl_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/dl_ckpt/'
+
+
+## WADA WADA
+
+python pipeline.py --mode train --dataset '/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/reid_cp/' --part_att_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/pt_at_ckpt/' --mask_dir '/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/masks/' --train_csv_path "/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/train_data.csv" --mask_dl_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/dl_ckpt/'
+
+
+### RGB data ###
+python pipeline_rgb.py --mode train --dataset '/home/fyp3/Desktop/Batch18/Re_ID/RGB_data/BigData/ReID-RGB/' --part_att_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/pt_at_ckpt/' --mask_dir '/home/fyp3/Desktop/Batch18/Re_ID/RGB_data/BigData/masks/' --train_csv_path "/home/fyp3/Desktop/Batch18/Re_ID/RGB_data/BigData/train_data.csv" --mask_dl_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/dl_ckpt/'
+
+
+python pipeline.py --mode train --dataset '/home/fyp3/Desktop/Batch18/Re_ID/VeRi/organized_images/' --part_att_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/FYP-SPAN/PartAttMask_ckpt/10.ckpt' --mask_dir '/home/fyp3/Desktop/Batch18/Re_ID/VeRi/masks/' --train_csv_path "/home/fyp3/Desktop/Batch18/Re_ID/VeRi/organized_images/train_data.csv" --mask_dl_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/dl_ckpt/'
+
+
+## WADA WADA WADA   (2023/11/18)
+
+python pipeline.py --mode train --dataset '/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/reid_original/' --part_att_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/pt_at_ckpt/' --mask_dir '/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/masks/' --train_csv_path "/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/train_data.csv" --mask_dl_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/dl_ckpt/'
+
+
+### Veri command
+python pipeline.py --mode train --dataset '/home/fyp3/Desktop/Batch18/Re_ID/VeRi/organized_images' --part_att_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/FYP-SPAN/PartAttMask_ckpt/' --mask_dir '/home/fyp3/Desktop/Batch18/Re_ID/VeRi/masks/' --train_csv_path "/home/fyp3/Desktop/Batch18/Re_ID/VeRi/organized_images/train_data.csv" --mask_dl_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/dl_ckpt/'
+
+### Vehicle command
+python pipeline.py --mode train --dataset '/home/fyp3/Desktop/Batch18/Re_ID/vehicleID_data' --part_att_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/FYP-SPAN/PartAttMask_ckpt/' --mask_dir '/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/masks/' --train_csv_path "/home/fyp3/Desktop/Batch18/Re_ID/vehicleID_results/train_data.csv" --mask_dl_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/dl_ckpt/'
+
+
+python pipeline.py --mode train --dataset '/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/final_results_thermal_dataset/reid_cp/' --part_att_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/pt_at_ckpt/' --mask_dir '/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/final_results_thermal_dataset/masks/attention_masks_gen/' --train_csv_path "/home/fyp3/Desktop/Batch18/Re_ID/Weligama_data/train_data.csv" --mask_dl_ckpt '/home/fyp3/Desktop/Batch18/Re_ID/Dataset/Weligama_grab_masks/Masked_Img/dl_ckpt/'
+
+
