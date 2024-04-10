@@ -9,4 +9,5 @@ The project contains a thermal vision based maritime surveillance system. It inc
 Move into the object Object tracking folder and follow the instructions there.
 
 A demo video of out object tracking algorithm is presented below.
-[![Tracking Performance](https://drive.google.com/file/d/1unfq_AmCCbecDxSLF5C3q7VNzfh9kXw0/view?usp=drive_link)](https://drive.google.com/file/d/1CH0uQ3gU0Lt2J2lBxkF8xpyFhlBoK3fG/view?usp=drive_link)
+
+[![Tracking Performance](/images/tracking.png)](https://drive.google.com/file/d/1CH0uQ3gU0Lt2J2lBxkF8xpyFhlBoK3fG/view?usp=drive_link)
