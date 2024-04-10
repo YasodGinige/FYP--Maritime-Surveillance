@@ -26,8 +26,8 @@ a) Results of the encoder-decoder model used in foreground extracting. (b) Masks
 
 - Download this repo by:
 ```
-$ git clone https://github.com/tsaishien-chen/SPAN.git
-$ cd SPAN
+$ https://github.com/YasodGinige/FYP--Maritime-Surveillance.git
+$ cd Vessel-Reidentification
 ```
 - We run the code under Python 3.6.9
 - The versions of used python packages are listed in `requirements.txt`. You can install all the dependancies by:
@@ -38,28 +38,11 @@ $ pip3 install -r requirements.txt
 ### Train
 To train the model from scratch, please run
 ```
-$ python3 main.py --mode train --image_root <Path_to_VeRi>
+$ python3 main.py --mode train --image_root <Path_to_the_dataset>
 ```
 For example,
 ```
-$ python3 main.py --mode train --image_root ../Dataset/VeRi
-```
-The whole training process includes five steps:
-1. generating the foreground masks by grabcut,
-2. training network to generate more robust foreground mask,
-3. generating the foreground masks by deep learning network,
-4. training network to generate part (front, rear and side) attention mask, and
-5. generating part attention masks.
-
-### Implement
-We have given the pretrained model of part attention generator; </br>
-therefore, you can simply generate the part attention mask without training by
-```
-$ python3 main.py --mode implement --image_root <Path_to_VeRi>
-```
-For example,
-```
-$ python3 main.py --mode implement --image_root ../Dataset/VeRi
+$ python3 main.py --mode train --image_root <Path_to_the_dataset>
 ```
 
 ### Visualize
