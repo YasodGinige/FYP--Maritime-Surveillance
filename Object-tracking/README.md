@@ -1,18 +1,9 @@
-# Track to Detect and Segment: An Online Multi-Object Tracker (CVPR 2021)
+# Maritime Object Tracking
 
-[comment]: <> (> [**Track to Detect and Segment: An Online Multi-Object Tracker**]&#40;http://arxiv.org/abs/2004.01177&#41;,            )
+We addapted the TraDeS algorithm to detect and track maritime objects in the thermal domain.
+
+[**Track to Detect and Segment: An Online Multi-Object Tracker**]&#40;http://arxiv.org/abs/2004.01177&#41;,            )
 [**Track to Detect and Segment: An Online Multi-Object Tracker**](https://openaccess.thecvf.com/content/CVPR2021/papers/Wu_Track_To_Detect_and_Segment_An_Online_Multi-Object_Tracker_CVPR_2021_paper.pdf)  
-Jialian Wu, Jiale Cao, Liangchen Song, Yu Wang, Ming Yang, Junsong Yuan        
-In CVPR, 2021. [[Paper]](https://openaccess.thecvf.com/content/CVPR2021/papers/Wu_Track_To_Detect_and_Segment_An_Online_Multi-Object_Tracker_CVPR_2021_paper.pdf) [[Project Page]](https://jialianwu.com/projects/TraDeS.html) [Demo [(YouTube)](https://www.youtube.com/watch?v=oGNtSFHRZJAl) [(bilibili)](https://www.bilibili.com/video/BV12U4y1p7wg)]
-
-<p align="left"> <img src='https://github.com/JialianW/homepage/blob/master/images/TraDeS_demo.gif?raw=true' align="center" width="400px">
-
-## News
-
-* As reported in the [OVIS](https://openreview.net/forum?id=IfzTefIU_3j) paper, TraDeS achieves competitive performance on Occluded Video Instance Segmentation (12.0 AP on OVIS test set).
-* As reported in the [MvMHAT](https://www.researchgate.net/profile/Ruize-Han/publication/353819964_Self-supervised_Multi-view_Multi-Human_Association_and_Tracking/links/611356961ca20f6f8613727d/Self-supervised-Multi-view-Multi-Human-Association-and-Tracking.pdf) paper,
-  TraDeS also performs well on Multi-view Persons Tracking.
-* TraDeS has been applied to 6 datasets across 4 tasks through our or third-parties' implementations.
 
 ## Installation
 
@@ -21,7 +12,7 @@ Please refer to [INSTALL.md](readme/INSTALL.md) for installation instructions.
 ## Run Demo
 Before run the demo, first download our trained models:
 [CrowdHuman model](https://drive.google.com/file/d/1pljgwSecg50OhCTc2yCEhEBY3AwvPFlp/view?usp=sharing) (2D tracking),
-[MOT model](https://drive.google.com/file/d/18DQi6LqFuO7_2QObvZSNK2y_F8yXT17p/view?usp=sharing) (2D tracking) or [nuScenes model](https://drive.google.com/file/d/1PHcDPIvb6owVuMZKR_YieyYN12IhbQLl/view?usp=sharing) (3D tracking). 
+
 Then, put the models in `TraDeS_ROOT/models/` and `cd TraDeS_ROOT/src/`. **The demo result will be saved as a video in `TraDeS_ROOT/results/`.**
 
 ### *2D Tracking Demo*
