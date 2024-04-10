@@ -22,25 +22,15 @@ cd YOWO
 
 After downloading the dataset, rearrange it according to the [these](https://github.com/facebookresearch/SlowFast/blob/master/slowfast/datasets/DATASET.md) instructions.
 
-Modify the paths in ucf24.data and jhmdb21.data under cfg directory accordingly.
-Download the dataset annotations from [here](https://www.dropbox.com/sh/16jv2kwzom1pmlt/AABL3cFWDfG5MuH9PwnjSJf0a?dl=0).
-
 ### Download backbone pretrained weights
 
 * Darknet-19 weights can be downloaded via:
 ```bash
 wget http://pjreddie.com/media/files/yolo.weights
 ```
-
 * ResNeXt ve ResNet pretrained models can be downloaded from [here](https://drive.google.com/drive/folders/1zvl89AgFAApbH0At-gMuZSeQB_LpNP-M?usp=sharing).
 
-***NOTE:*** For JHMDB-21 trainings, HMDB-51 finetuned pretrained models should be used! (e.g. "resnext-101-kinetics-hmdb51_split1.pth").
-
-* For resource efficient 3D CNN architectures (ShuffleNet, ShuffleNetv2, MobileNet, MobileNetv2), pretrained models can be downloaded from [here](https://github.com/okankop/Efficient-3DCNNs).
-
 ### Pretrained YOWO models
-
-Pretrained models for UCF101-24 and J-HMDB-21 datasets can be downloaded from [here](https://www.dropbox.com/sh/16jv2kwzom1pmlt/AABL3cFWDfG5MuH9PwnjSJf0a?dl=0).
 
 Pretrained models for AVA dataset can be downloaded from [here](https://drive.google.com/drive/folders/1g-jTfxCV9_uNFr61pjo4VxNfgDlbWLlb?usp=sharing).
 
@@ -54,20 +44,10 @@ All materials (annotations and pretrained models) are also available in Baiduyun
 ```bash
 python main.py --cfg cfg/ava.yaml
 ```
-* UCF101-24 training:
-```bash
-python main.py --cfg cfg/ucf24.yaml
-```
-* J-HMDB-21 training:
-```bash
-python main.py --cfg cfg/jhmdb.yaml
-```
 
 ## Validating the model
 
 * For AVA dataset, after each epoch, validation is performed and frame-mAP score is provided.
-
-* For UCF101-24 and J-HMDB-21 datasets, after each validation, frame detections is recorded under 'jhmdb_detections' or 'ucf_detections'. From [here](https://www.dropbox.com/sh/16jv2kwzom1pmlt/AABL3cFWDfG5MuH9PwnjSJf0a?dl=0), 'groundtruths_jhmdb.zip' and 'groundtruths_jhmdb.zip' should be downloaded and extracted to "evaluation/Object-Detection-Metrics". Then, run the following command to calculate frame_mAP.
 
 ```bash
 python evaluation/Object-Detection-Metrics/pascalvoc.py --gtfolder PATH-TO-GROUNDTRUTHS-FOLDER --detfolder PATH-TO-DETECTIONS-FOLDER
@@ -78,17 +58,6 @@ python evaluation/Object-Detection-Metrics/pascalvoc.py --gtfolder PATH-TO-GROUN
 ```bash
 python video_mAP.py --cfg cfg/ucf24.yaml
 ```
-
-## Running on a text video
-
-* You can run AVA pretrained model on any test video with the following code:
-```bash
-python test_video_ava.py --cfg cfg/ava.yaml
-```
-
-***UPDATEs:*** 
-* YOWO is extended for AVA dataset. 
-* Old repo is deprecated and moved to [YOWO_deprecated](https://github.com/wei-tim/YOWO/tree/yowo_deprecated) branch. 
 
 ### Citation
 If you use this code or pre-trained models, please cite the following:
@@ -102,5 +71,3 @@ year={2019}
 }
 ```
 
-### Acknowledgements
-We thank [Hang Xiao](https://github.com/marvis) for releasing [pytorch_yolo2](https://github.com/marvis/pytorch-yolo2) codebase, which we build our work on top. 
