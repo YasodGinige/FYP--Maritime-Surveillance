@@ -48,6 +48,6 @@ A demo video of detecting suspicious activities like human trafficking is presen
 Finally, we have integrated all the 3 subsystems, as shown in the overall architecture. The following video shows the final output shown in the system UI.
 <div align="center">
 <a href="https://drive.google.com/file/d/1bmQBxbDCgsD7Dd-dec6R5ZznR3bYUXJV/view?usp=drive_link">
-    <img src="/images/activity_tn.png" width="640" height="450" alt="activity detection"/>
+    <img src="/images/ui_tn.png" width="640" height="450" alt="ui"/>
 </a>
 </div>
