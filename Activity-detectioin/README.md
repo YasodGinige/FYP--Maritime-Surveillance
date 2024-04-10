@@ -11,17 +11,16 @@ To set up the algorithm, follow the below-mentioned steps.
 
 ## Installation
 ```bash
-git clone https://github.com/wei-tim/YOWO.git
+git clone https://github.com/YasodGinige/FYP--Maritime-Surveillance.git
 cd YOWO
 ```
 
 ### Datasets
 
+* Our    : Dowload from [here](https://drive.google.com/drive/folders/1MRWGZO6Qmw952WIPxi5eSfsiR52R5VLw)
 * AVA	   : Download from [here](https://github.com/cvdfoundation/ava-dataset)
-* UCF101-24: Download from [here](https://drive.google.com/file/d/1o2l6nYhd-0DDXGP-IPReBP4y1ffVmGSE/view?usp=sharing)
-* J-HMDB-21: Download from [here](http://jhmdb.is.tue.mpg.de/challenge/JHMDB/datasets)
 
-Use instructions [here](https://github.com/facebookresearch/SlowFast/blob/master/slowfast/datasets/DATASET.md) for the preperation of AVA dataset.
+After downloading the dataset, rearrange it according to the [these](https://github.com/facebookresearch/SlowFast/blob/master/slowfast/datasets/DATASET.md) instructions.
 
 Modify the paths in ucf24.data and jhmdb21.data under cfg directory accordingly.
 Download the dataset annotations from [here](https://www.dropbox.com/sh/16jv2kwzom1pmlt/AABL3cFWDfG5MuH9PwnjSJf0a?dl=0).
