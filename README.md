@@ -51,3 +51,10 @@ Finally, we have integrated all the 3 subsystems, as shown in the overall archit
     <img src="/images/ui_tn.png" width="640" height="450" alt="ui"/>
 </a>
 </div>
+
+
+## Contacts
+
+For further clarification, please contact one of our project members.
+Yasod - yasodginige98@gmail.com
+Ransika - ransika1998@gmail.com
