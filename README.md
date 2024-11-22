@@ -1,5 +1,9 @@
 # Maritime Surveillance System
 
+**Note:**
+- ⭐ **Please leave a <font color='orange'>STAR</font> if you like this project!** ⭐
+- If you are using this work for academic purposes, please cite our [paper](https://arxiv.org/abs/2406.08294).
+
 The project contains a thermal vision based maritime surveillance system. It includes the following options.
 1. Object tracking: The algorithm is capable of tracking vessels, ships, jet skies, and humans
 2. Vessel re-identification: re-identify vessels irrespective of their viewpoint using a database.
@@ -52,9 +56,21 @@ Finally, we have integrated all the 3 subsystems, as shown in the overall archit
 </a>
 </div>
 
+## Citations
+If you are using this work for academic purposes, please cite our paper.
+```
+@article{ginige2024vessel,
+  title={Vessel Re-identification and Activity Detection in Thermal Domain for Maritime Surveillance},
+  author={Ginige, Yasod and Gunasekara, Ransika and Hewavitharana, Darsha and Ariyarathne, Manjula and Rodrigo, Ranga and Jayasekara, Peshala},
+  journal={arXiv preprint arXiv:2406.08294},
+  year={2024}
+}
+```
 
 ## Contacts
 
 For further clarification, please contact one of our project members.
 Yasod - yasodginige98@gmail.com
 Ransika - ransika1998@gmail.com
+
+
