@@ -56,6 +56,16 @@ Finally, we have integrated all the 3 subsystems, as shown in the overall archit
 </a>
 </div>
 
+## Dataset
+Our dataset can be used for maritime object (vessels, ships, humans, jet skies);
+- detection,
+- identification,
+- and activity detection
+in the thermal domain.
+
+You can find our dataset [here](https://hevidra.github.io/).
+Please cite our paper if you are using it for academic purposes.
+
 ## Citations
 If you are using this work for academic purposes, please cite our paper.
 ```
