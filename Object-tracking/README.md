@@ -41,14 +41,5 @@ We follow [CenterTrack](https://arxiv.org/pdf/2004.01177.pdf) which uses CrowdHu
 The trained model is available at [CrowdHuman model](https://drive.google.com/file/d/1pljgwSecg50OhCTc2yCEhEBY3AwvPFlp/view?usp=sharing).
 
 
-## Citation
-If you find it useful in your research, please consider citing our paper as follows:
-
-    @inproceedings{Wu2021TraDeS,
-    title={Track to Detect and Segment: An Online Multi-Object Tracker},
-    author={Wu, Jialian and Cao, Jiale and Song, Liangchen and Wang, Yu and Yang, Ming and Yuan, Junsong},
-    booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year={2021}}
-
 ## Acknowledgment
 Many thanks to [CenterTrack](https://github.com/xingyizhou/CenterTrack) authors for their great framework!
