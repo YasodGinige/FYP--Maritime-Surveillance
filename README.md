@@ -1,8 +1,6 @@
 # Maritime Surveillance System
 
 **Note:**
-- ⭐ **Please leave a <font color='orange'>STAR</font> if you like this project!** ⭐
-- If you are using this work for academic purposes, please cite our [paper](https://arxiv.org/abs/2406.08294).
 
 The project contains a thermal vision based maritime surveillance system. It includes the following options.
 1. Object tracking: The algorithm is capable of tracking vessels, ships, jet skies, and humans
