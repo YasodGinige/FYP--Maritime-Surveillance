@@ -64,16 +64,6 @@ in the thermal domain.
 You can find our dataset [here](https://hevidra.github.io/).
 Please cite our paper if you are using it for academic purposes.
 
-## Citations
-If you are using this work for academic purposes, please cite our paper.
-```
-@article{ginige2024vessel,
-  title={Vessel Re-identification and Activity Detection in Thermal Domain for Maritime Surveillance},
-  author={Ginige, Yasod and Gunasekara, Ransika and Hewavitharana, Darsha and Ariyarathne, Manjula and Rodrigo, Ranga and Jayasekara, Peshala},
-  journal={arXiv preprint arXiv:2406.08294},
-  year={2024}
-}
-```
 
 ## Contacts
 
