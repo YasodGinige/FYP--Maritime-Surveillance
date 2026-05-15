@@ -1,11 +1,23 @@
 # Maritime Surveillance System
 
+If you are using this repository for academic work, please cite our [paper](https://link.springer.com/article/10.1007/s13042-026-03049-w).
+
 **Note:**
 
 The project contains a thermal vision based maritime surveillance system. It includes the following options.
 1. Object tracking: The algorithm is capable of tracking vessels, ships, jet skies, and humans
 2. Vessel re-identification: re-identify vessels irrespective of their viewpoint using a database.
 3. Activity detection: detect suspicious activities like human trafficking.
+
+## Dataset
+Our dataset can be used for maritime object (vessels, ships, humans, jet skies);
+- detection,
+- identification,
+- and activity detection
+in the thermal domain.
+
+You can find our dataset [here](https://hevidra.github.io/).
+Please cite our paper if you are using it for academic purposes.
 
 ## Overall Architecture
 
@@ -54,16 +66,21 @@ Finally, we have integrated all the 3 subsystems, as shown in the overall archit
 </a>
 </div>
 
-## Dataset
-Our dataset can be used for maritime object (vessels, ships, humans, jet skies);
-- detection,
-- identification,
-- and activity detection
-in the thermal domain.
 
-You can find our dataset [here](https://hevidra.github.io/).
-Please cite our paper if you are using it for academic purposes.
 
+## Citations
+
+```bibtex
+@article{ginige2026vc,
+  title={Vc-fes: viewpoint-conditioned feature selection for vehicle re-identification in thermal vision},
+  author={Ginige, Yasod and Gunasekara, Ransika and Hewavitharana, Darsha and Ariyarathne, Manjula and Jayasekara, Peshala and Rodrigo, Ranga},
+  journal={International Journal of Machine Learning and Cybernetics},
+  volume={17},
+  number={6},
+  pages={258},
+  year={2026},
+  publisher={Springer}
+}
 
 ## Contacts
 
